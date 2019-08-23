@@ -1,6 +1,7 @@
 package blockchain;
 
 import blockchain.common.BlockInterface;
+import blockchain.util.ConsoleLogger;
 import blockchain.util.StringUtil;
 
 import java.util.Date;
@@ -47,7 +48,7 @@ public class Block<D> implements BlockInterface {
             nonce++;
             hash = calculateHash();
         }
-        System.out.println("Block Mined!!! : " + hash);
+        ConsoleLogger.log("Block Mined!!! : " + hash);  // TODO: make inject project-logger
     }
 
 }
