@@ -1,0 +1,7 @@
+.idea/
+.idea/**/*
+out/
+out/**/*
+bin/
+bin/**/*
+NoobChain-Tutorial-Part-1.iml
